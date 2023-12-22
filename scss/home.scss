@@ -1,0 +1,162 @@
+.home{
+    padding-top: 45px;
+    padding-bottom: clamp(59px, 10.41vw, 150px);
+
+
+    &__content{
+        padding-top: 150px;
+        padding-bottom: 250px;
+        max-width: 371px;
+    }
+
+    &__title{
+        color: #000000;
+        font-family: 'Yeseva One';
+        font-size: 30px;
+        font-weight: 400;
+        margin-bottom: 15px;
+    }
+
+    &__text{
+        color: #000000;
+        font-family: 'Comfortaa';
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 36px;        
+    }
+
+    &__btn{
+        @extend %button;
+    }
+
+    &__photo{
+        position: absolute;
+        left: 255px;
+        top: 0;
+    }
+
+    &__inner{
+        position: relative;
+    }
+
+}
+
+
+@media (max-width:1000px) {
+
+      .home__img{
+        width: 655px;
+      }
+
+      .home__photo{
+        left: 300px;
+      }
+
+
+      .home__content {
+        padding-top: 90px;
+        padding-bottom: 85px;
+        max-width: 333px;
+    }
+
+}
+
+
+@media (max-width:768px) {
+    .home__content{
+        max-width: 230px;
+        padding: 105px 0 125px;
+
+    }
+
+
+    .home__title{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .home__text{
+        font-size: 10px;
+        margin-bottom: 20px;
+    }
+
+    .home__photo{
+        left: 190px;
+
+    }
+}
+
+@media (max-width:480px) {
+    .home__img{
+        width: 309px;
+    }
+
+       
+    .home__photo{
+        left: 175px;
+    }
+
+    
+    .home__title{
+        font-size: 15.183px;
+        margin-bottom: 15.8px;
+    }
+
+    .home__text{
+        font-size: 8px;
+        margin-bottom: 15.8px;
+    }
+
+    .home__content{
+        max-width: 180px;
+        padding: 80px 0;
+
+    }
+
+    .home{
+        padding-bottom: 50px;
+    }
+
+    .home__btn{
+        font-size: 12px;
+        padding: 16px 50px;
+    }
+}
+
+
+@media (max-width:360px) {
+    .home__title{
+        font-size: 18px;
+        margin-bottom: 15.8px;
+    }
+
+    .home__text{
+        font-size: 10px;
+        margin-bottom: 15.8px;
+    }
+
+    .home__content{
+        max-width: 233px;
+        padding-top: 35px;
+
+    }
+
+    .home__img{
+        width: 113px;
+        height: 151px;
+    }
+
+    .home__photo{
+        left: 215px;
+    }
+
+    .home__btn{
+        font-size: 10px;
+        padding: 15px 47px;
+    }
+
+
+
+
+    
+}

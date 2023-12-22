@@ -1,0 +1,83 @@
+.question{
+    
+    &__title{
+        font-family: 'Yeseva One';
+        font-size: 40px;
+        font-weight: 400;
+        color: #000;
+    }
+}
+
+.accordion{
+    padding-bottom: clamp(50px, 13.88vw, 200px);
+
+    &__btn{
+        font-family: 'Yeseva One';
+        font-size: 16px;
+        font-weight: 400;
+        position: relative;
+        width: 100%;
+        display: block;
+        text-align: left;
+        padding: 16px 45px 16px 13px;
+        cursor: pointer;
+
+
+        &::after{
+            content: url(../img/certificate/Vector.png);
+            position: absolute;
+            top: 16px;
+            right: 26px;
+       }
+
+       &.accordion__active::after{
+            transform: rotate(180deg);
+       }
+    }
+
+
+
+    &__content{
+        font-family: 'Comfortaa';
+        font-size: 14px;
+        font-weight: 400;
+        color: #000;
+        opacity: 0;
+        max-height: 0;
+        transition: opacity .3s, max-height .3s linear;
+
+        &.accordion__content-hidden{
+            opacity: 1;
+        }
+
+        & ol{
+            padding: 20px;
+        }
+    }
+
+    &__item{
+        background-color: #FFF;
+        box-shadow: 0px 4px 11px 0px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width:768px) {
+    .accordion__btn{
+        font-size: 13px;
+    }
+
+    .accordion__content{
+        font-size: 13px;
+    }
+}
+
+@media (max-width:360px) {
+    .accordion__btn{
+        font-size: 12px;
+    }
+
+    .accordion__content{
+        font-size: 11px;
+    }
+}

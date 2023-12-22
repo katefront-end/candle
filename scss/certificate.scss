@@ -1,0 +1,103 @@
+.certificate{
+
+    padding-bottom: clamp(60px, 11.11vw, 160px);
+
+        &__title{
+            font-family: 'Yeseva One';
+            font-size: 40px;
+            font-weight: 400;
+            color: #000;
+            margin-bottom: 15px;
+        }
+
+        &__text{
+            font-family: 'Comfortaa';
+            font-size: 14px;
+            font-weight: 400;
+            color: #000;
+        }
+
+        &__swiper{
+            width: 1135px;
+            overflow: hidden;
+        }
+
+        &__content{
+            padding-bottom: 114px;
+            
+
+            & .swiper-pagination{
+                text-align: left;
+                bottom: 60px;
+            }
+        }
+
+        &__line{
+
+            position: relative;
+
+            &::after{
+                content: '';
+                position: absolute;
+                left: 22px;
+                bottom: 13px;
+                width: 1000%;
+                height: 1px;
+                background-color: #7B6152;
+            }
+
+            &::before{
+                content: url(../img/certificate/remo-4.png);
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 22px;
+                height: 30px;
+                display: inline-block;
+            }
+        }
+        
+}
+
+@media (max-width:1000px) {
+    
+    .certificate__img{
+         width: 280px;
+    }
+ 
+ 
+     .certificate__swiper{
+         width: 850px !important;
+     }
+ }
+ 
+ @media (max-width:768px) {
+    
+     .certificate__img{
+         width: 199px;
+     }
+ 
+     .certificate__swiper{
+         width: 600px !important;
+     }
+ }
+
+@media (max-width:480px) {
+    
+    .certificate__swiper{
+        width: 415px !important;
+        margin: 0 auto;
+    }   
+
+    .certificate__content .swiper-pagination{
+        text-align: center;
+    }
+}
+
+@media (max-width:360px) {
+    
+    .certificate__swiper{
+        width: 200px !important;
+        margin: 0 auto;
+    }   
+}

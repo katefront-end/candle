@@ -1,0 +1,165 @@
+.course{
+
+    &__create{
+        color: #FFF;
+        font-family: 'Yeseva One';
+        font-size: 11px;
+        font-weight: 400;
+        background-color: #BEA495;
+        padding: 15px 10px;
+        position: absolute;
+        left: 0;
+        top: 166px;
+        z-index: 2;
+    }
+
+    &__study{
+        color: #FFF;
+        font-family: 'Comfortaa';
+        font-size: 10px;
+        font-weight: 400;
+        background-color: #BEA495;
+        padding: 7px 10px;
+        position: absolute;
+        left: 0;
+        top: 224px;
+        z-index: 2;
+    }
+
+    &__price{
+        color: #FFF;
+        font-family: 'Yeseva One';
+        font-size: 11px;
+        font-weight: 400;
+        background-color: #BEA495;
+        padding: 25px 10px;
+        position: absolute;
+        bottom: -14px;
+        right: -14px;
+    }
+
+    &__photo{
+        position: relative;
+    }
+
+    &__img{
+        width: 100%;
+        margin-bottom: 28px;
+    }
+
+    
+    &__title{
+        font-family: 'Yeseva One';
+        font-size: 16px;
+        font-weight: 400;
+        color: #000;
+        margin-bottom: 15px;
+    }
+
+    &__text{
+        font-family: 'Comfortaa';
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 30px;
+        color: #000;
+
+    }
+
+    &__buy{
+        
+        font-family: 'Comfortaa';
+        font-size: 14px;
+        font-weight: 600;
+        color: #272727;
+        background-color: #FFBD59;
+        padding: 13px 16px;
+        
+    }
+
+    &__content{
+        text-align: center;
+    }
+
+}
+
+@media (max-width:768px) {
+
+    .course__img{
+        width: 195px;
+    }
+
+    .course__buy{
+        font-size: 12px;
+    }
+
+    .course__text{
+        font-size: 10px;
+    }
+
+    .course__title{
+        font-size: 12px;
+    }
+
+    .course__create{
+        padding: 6px;
+        top: 115px;
+        font-size: 9px;
+    }
+
+    .course__price{
+        padding: 10px;
+        right: 0;
+        font-size: 9px;
+        bottom: 40px;
+    }
+
+    .course__study{
+        padding: 5px;
+        top: 155px;
+        font-size: 8px;
+    }
+
+}
+
+@media (max-width:480px) {
+    .course__price{
+        right: 30px;
+    }
+}
+
+@media (max-width:360px) {
+    
+    .course__create{
+        font-size: 11px;
+    }
+
+    .course__study{
+        font-size: 11px;
+    }
+
+    .course__price{
+        right: 1px;
+    }
+
+    .cource--inner{
+        display: block;
+    }
+
+    .course__item{
+        width: 255px;
+        margin: 0 auto;
+    }
+
+    .course__img{
+        width: 100%;
+    }
+
+    .course__text{
+        margin-bottom: 15px;
+    }
+
+    .course__buy{
+        margin-bottom: 20px;
+    }
+
+}

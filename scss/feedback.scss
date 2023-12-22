@@ -1,0 +1,158 @@
+.feedback{
+    padding-bottom: 56px;
+    padding-top: clamp(59px, 10.41vw, 150px);
+    margin-bottom: clamp(50px, 11.59vw, 167px);
+
+    &__item{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 0 16px;
+        align-items: center;
+        padding-left: 20px;
+        position: relative;
+        margin-bottom: 50px;
+      
+    }
+
+
+    &__video{
+        position: relative;
+    }
+
+    &__button{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    }
+
+    &__review{
+        font-family: 'Yeseva One';
+        font-size: 16px;
+        font-weight: 400;
+        color: #000;
+        margin-bottom: 15px;
+    }
+
+    &__candle{
+        font-family: 'Comfortaa';
+        font-size: 14px;
+        font-weight: 400;
+        color: #000;
+        margin-bottom: 83px;
+    }
+
+    &__exile{
+        background-color: #FFBD59;   
+        padding: 20px 35px ;
+        font-family: 'Comfortaa';
+        font-size: 14px;
+        font-weight: 600;
+        color: #272727;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    &-swiper{
+        width: 760px;
+        overflow: hidden;
+    }
+}
+
+
+.swiper-pagination-bullet {
+    width: 53px;
+    height: 4px;
+    background-color: #BEA495;
+    border-radius: 0;
+    opacity: 1;
+    margin: 0 3.5px !important;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active{
+    background-color: #272727;
+}
+
+
+@media (max-width:1000px) {
+
+    .feedback-swiper{
+        width: 650px;
+    }
+}
+
+@media (max-width:768px) {
+
+    .feedback__review{
+        font-size: 12px;
+    }
+
+    .feedback__candle{
+        font-size: 10px;
+    }
+
+    .feedback__img{
+        width: 200px;
+    }
+
+    .feedback__exile{
+        padding: 15px 20px;
+    }
+
+    .feedback__photo{
+        width: 50px;
+    }
+
+    .feedback-swiper{
+        width: 480px;
+    }
+}
+
+@media (max-width:480px) {
+    .feedback__exile{
+        font-size: 10px;
+        right: 100px;
+    }
+}
+
+@media (max-width:360px) {
+    
+    .feedback__item{
+        display: block;
+    }
+
+
+    .feedback-swiper{
+        width: 250px;
+    }
+
+    .feedback__review{
+        font-size: 10px;
+    }
+
+    .feedback__candle{
+        font-size: 9px;
+        margin-bottom: 20px;
+    }
+
+    .feedback__body{
+        text-align: center;
+    }
+
+    .feedback__exile{
+        position: static;
+    }
+
+    .feedback__img{
+        width: 250px;
+        margin-bottom: 12px;
+    }
+
+    .feedback__item{
+        padding-left: 0;
+    }
+}
+
+

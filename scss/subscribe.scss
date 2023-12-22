@@ -1,0 +1,141 @@
+.subscribe{
+
+    padding-top: clamp(50px, 10.41vw, 150px);
+    padding-bottom: 50px;
+
+   &__row{
+    display: flex;
+    justify-content: space-between;
+   }
+
+   &__form{
+        background-color: #FFF;
+        padding: 75px 40px;
+        max-width: 664px;
+        width: 100%;
+   }
+
+   &__input{
+        display: block;
+        width: 100%;
+        font-family: 'Comfortaa';
+        font-size: 14px;
+        font-weight: 400;
+        border: none;
+        border-bottom: 1px solid #000;
+        padding: 23px 7px 13px;
+        margin-bottom: 25px;
+   }
+
+   &__title{
+    font-family: 'Yeseva One';
+    font-size: 40px;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 50px;
+   }
+ 
+   &__btn{
+    @extend %link;
+    margin-top: 35px;
+
+  }
+
+  &bella{
+     margin-left: 8px;
+  }
+
+
+}
+
+@media (max-width:1000px) {
+     .subscribe__row{
+          gap: 21px;
+     }
+}
+
+
+@media (max-width:768px) {
+     .subscribe__img{
+          width: 187px;
+          height: 285px;
+     }
+
+     .subscribe__title{
+          font-size: 15px;
+     }
+
+     .subscribe__input{
+          font-size: 8px;
+     }
+
+     .subscribe__form{
+          width: 440px;
+          height: 277px;
+          padding: 30px 25px;
+     }
+
+     .subscribe__row{
+          gap: 15px;
+     }
+
+     
+     .subscribe__title{
+          margin-bottom: 43px;
+     }
+
+     .subscribe__input{
+          margin-bottom: 18px;
+          padding: 18px 8px 12px;
+     }
+
+     .subscribe__btn{
+          margin-top: 7px;
+     }
+}
+
+
+@media (max-width:480px) {
+     
+     .subscribe__img{
+          display: none;
+     }
+
+     .subscribe__form{
+          height: 267px;
+          width: 440px;
+     }
+
+     .subscribe__title{
+          margin-bottom: 40px;
+     }
+
+     .subscribe__input{
+          margin-bottom: 18px;
+          padding: 15px 7px 10px;
+     }
+
+     .subscribe__btn{
+          padding: 14px 21px;
+     }
+}
+
+
+@media (max-width:360px) {
+     
+     
+     .subscribe__form{
+          height: 267px;
+          width: 340px;
+     }
+
+     
+     .subscribe__btn{
+          padding: 13px 15px;
+          margin-top: -7px;
+     }
+
+     .subscribe__input{
+          margin-bottom: 30px;
+     }
+}

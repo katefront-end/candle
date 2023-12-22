@@ -1,0 +1,146 @@
+.teacher{
+
+    background-color: #A5978E;
+    padding: 60px 0;
+
+
+   &__title{
+
+        &-top{
+            font-family: 'Yeseva One';
+            font-size: 40px;
+            font-weight: 400;
+            color: #FAFAFA;
+            margin-bottom: 15px;
+        }
+
+   }
+
+   &__text{
+
+        &-end{
+            font-family: 'Comfortaa';
+            font-size: 14px;
+            font-weight: 400;
+            color: #FAFAFA;
+        }
+   }
+
+   &__title{
+        font-family: 'Yeseva One';
+        font-size: 12px;
+        font-weight: 400;
+        color: #FAFAFA;
+   }
+
+   &__text{
+        font-family: 'Comfortaa';
+        font-size: 10px;
+        font-weight: 400;
+        color: #FAFAFA;
+   }
+
+
+   &__about{
+     position: absolute;
+     bottom: 9px;
+     right: 0;
+    background-color:#7B6152;
+    padding: 14px 10px;
+    width: 165px;
+    text-align: center;
+   }
+
+
+   &__item{
+     position: relative;
+   }
+}
+
+
+@media (max-width:768px) {
+     .teacher__text-end{
+          font-size: 10px;
+     }
+
+     .teacher__title-top{
+          font-size: 24px;
+     }
+
+    .teacher__img{
+          width: 142px;
+    }
+
+    .teacher__title{
+          font-size: 10px;
+    }
+
+    .teacher__text{
+     font-size: 9px;
+    }
+
+    .teacher__about{
+     width: 106px;
+     padding: 3px 3px;
+    }
+
+
+}
+
+
+@media (max-width:480px) {
+     
+     .teacher__title-top{
+          text-align: center;
+     }
+
+     .teacher__text-end{
+          max-width: 300px;
+          margin: 0 auto 15px;
+     }
+
+     .teacher__text{
+          font-size: 6px;
+     }
+
+     .teacher__title{
+          font-size: 8px;
+     }
+
+     .teacher__about{
+          padding: 9px 6px;
+     }
+
+     .teacher__content{
+          text-align: center;
+     }
+}
+
+
+@media (max-width:360px) {
+
+     .teacher--inner{
+          display: block;
+     }
+
+     .teacher__img{
+          width: 204px;
+          margin-bottom: 20px;
+     }
+
+     
+     .teacher__text{
+          font-size: 10px;
+     }
+
+     .teacher__title{
+          font-size: 11px;
+     }
+
+     .teacher__about{
+          padding: 17px 10px 10px 8px;
+          width: 151px;
+          right: 50px;
+          bottom: 34px;
+     }
+}

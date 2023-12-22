@@ -1,0 +1,80 @@
+.steps{
+
+    &__item{
+        display: flex;
+        gap: 0  39px ;
+        position: relative;
+    }
+
+    &__text{
+        font-family: 'Comfortaa';
+        font-size: 14px;
+        font-weight: 400;
+        color: #000;
+        width: 171px;
+    }
+
+    &__number{
+        color: #BEA495;
+        font-family: 'Yeseva One';
+        font-size: 30px;
+        font-weight: 400;
+
+    }
+
+    
+    &-left{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+    &-right{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    
+}
+
+
+@media (max-width:1000px) {
+    .steps__img{
+        width: 128px;
+    }
+
+    .steps__content{
+        width: 100px;
+    }
+
+    .steps__text{
+        width: 100px;
+        font-size: 11px;
+    }
+}
+
+@media (max-width:768px) {
+    .steps__content{
+        width: 90px;
+    }
+
+    .steps__img{
+        width: 85px;
+    }
+
+    .steps__text{
+        font-size: 8px;
+    }
+
+    .steps__number{
+        font-size: 20px;
+    }
+}
+
+
+@media (max-width:480px) {
+    .steps__number{
+        font-size: 12px;
+    }
+}
+

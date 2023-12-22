@@ -1,0 +1,62 @@
+.buy{
+    background-image: url(../img/buy/back.png);
+    background-repeat: no-repeat;
+    height: clamp(120px, 23.05vw, 332px);
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__text{
+        font-family: 'Yeseva One';
+        font-size: 40px;
+        font-weight: 400;
+        color: #FFF;
+    }
+
+    &__link{
+        @extend %link;
+
+        white-space: nowrap;
+    }
+
+    &__row{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    
+  &__bella{
+    margin-left: 8px;
+ }
+
+
+}
+
+
+@media (max-width:1000px) {
+    .buy__row{
+        gap: 7px;
+    }
+}
+
+
+@media (max-width:768px) {
+    .buy__text{
+        font-size: 15px;
+    }
+
+    .buy__link{
+        font-size: 12px;
+        padding: 15px 48px;
+    }
+}
+
+@media (max-width:480px) {
+    .buy__link{
+        font-size: 8px;
+        padding: 12px 35px;
+    }
+}
